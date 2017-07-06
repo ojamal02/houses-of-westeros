@@ -1,0 +1,19 @@
+<h1>Name: <%= @house.name %></h1>
+<h3>Words: <%= @house.motto %></h3>
+<h3>Sigil: <%= @house.sigil %></h3>
+
+
+<h5>Author: <%= @house.author %></h5>
+<h5>Source Material: <%= @house.source_material %></h5>
+
+<h3>Members of House <%= @house.name %></h3>
+<ul>
+  <% @member.each do |member| %>
+  <li> <%= member.first_name %>
+       <%= member.last_name %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add Member", new_house_member_path(@house) %>
+<%= link_to "Back", houses_path %>
