@@ -15,12 +15,13 @@
  */
 
 body {
-  background-color: cyan;
-  color: crimson;
+  background: linear-gradient(slategrey, white);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: darkgoldenrod;
+a:hover {
+  color: darkslategrey;
+  cursor: url("http://orig07.deviantart.net/5608/f/2013/213/9/2/game_of_thrones___jon_snow_and_ghost_icon_by_zappyattack-d6g9jq4.gif"), auto;
 }
